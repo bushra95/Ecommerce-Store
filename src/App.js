@@ -1,10 +1,12 @@
-import "./styles.css";
+import { BrowserRouter } from "react-router-dom";
+import "./App.css";
+import Header from "./Header";
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <BrowserRouter>
+      <Header />
+      <div className="App"></div>
+    </BrowserRouter>
   );
 }
